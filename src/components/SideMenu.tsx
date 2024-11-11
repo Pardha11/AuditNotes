@@ -57,7 +57,7 @@ export const SideMenu: React.FC = () => {
         {expanded && (
           <>
             <SideMenuFilter value={filter} onChange={onFilterChange} />
-            <Button variant="outlined" fullWidth={true} >Generate the report</Button>
+            <Button variant="outlined" fullWidth={true} onClick={() => console.log('Button clicked!')} >Generate the report</Button>
             <Divider/>
             <NoteList notes={notes} />
           </>
