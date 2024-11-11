@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) =>
 
 export const SideMenu: React.FC = () => {
   const { expanded, setExpanded } = useSidebarContext();
-  const { notes, filter, onFilterChange } = useNoteContext();
+  const { getAllNotes } = useNoteContext();
+  const allNotes = getAllNotes();
 
   const classes = useStyles(expanded);
 
