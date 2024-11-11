@@ -1,7 +1,7 @@
 import React from "react";
 import { useSwipeable } from "react-swipeable";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
-import { Paper, Divider } from "@material-ui/core";
+import { Paper, Divider, Button } from "@material-ui/core";
 
 import { SideMenuHeader, SideMenuFilter, NoteList } from "components";
 import { useSidebarContext, useNoteContext } from "hooks";
@@ -57,7 +57,8 @@ export const SideMenu: React.FC = () => {
         {expanded && (
           <>
             <SideMenuFilter value={filter} onChange={onFilterChange} />
-            <Divider />
+            <Button variant="outlined" fullWidth={true} >Generate the report</Button>
+            <Divider/>
             <NoteList notes={notes} />
           </>
         )}
