@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Layout } from "components";
-import { Home, Note, Form } from "pages";
+import { Home, Note, Form} from "pages";
+import CVELookup from "./CVELookup";
 import {
   ProvideThemeContext,
   ProvidSideBarContext,
@@ -47,6 +48,8 @@ export const App = () => (
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/create" component={Form} />
+              <Route exact path="/edit/:id" component={Form} />
+              <Route exact path="/CVELookup" component={CVELookup} />
               <Route exact path="/:slug/edit" component={Form} />
               <Route exact path="/:slug" component={Note} />
             </Switch>
