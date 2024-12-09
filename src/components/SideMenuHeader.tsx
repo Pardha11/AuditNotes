@@ -7,7 +7,7 @@ import {
   Hidden,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import GithubIcon from "@material-ui/icons/GitHub";
+import SvgIcon from "@material-ui/core/SvgIcon";
 import CloseIcon from "@material-ui/icons/Close";
 import OpenIcon from "@material-ui/icons/Menu";
 import LightModeIcon from "@material-ui/icons/Brightness7";
@@ -28,10 +28,10 @@ const useStyles = makeStyles((theme) =>
     header: {
       marginRight: "auto",
       "& h6": {
-        fontFamily: "'McLaren', cursive;",
+        fontFamily: "'Arial';",
       },
       "& h5": {
-        fontFamily: "'McLaren', cursive;",
+        fontFamily: "'Arial';",
       },
     },
   })
@@ -63,19 +63,13 @@ export const SideMenuHeader: React.FC<Props> = ({
       {expanded && (
         <div className={classes.header}>
           <Typography variant="h5">
-            OfNote
-            <small>
-              <em>s</em>
-            </small>
+            AuditNotes
           </Typography>
           <Typography variant="subtitle2" color="textSecondary">
-            Offline note taking
+            Notetaking for Pentesters
           </Typography>
         </div>
       )}
-      <IconButton href="https://github.com/jhackshaw/ofnotes">
-        <GithubIcon />
-      </IconButton>
       <IconButton onClick={() => togglePalette()}>
         {paletteType === "dark" ? (
           <LightModeIcon titleAccess="set light theme" />
@@ -83,6 +77,9 @@ export const SideMenuHeader: React.FC<Props> = ({
           <DarkModeIcon titleAccess="set dark theme" />
         )}
       </IconButton>
+    <IconButton>t
+      <LightModeIcon titleAccess="set light theme" />
+    </IconButton>
       {expanded ? (
         <IconButton onClick={() => onClose()}>
           <CloseIcon titleAccess="close menu" />

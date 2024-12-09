@@ -1,22 +1,7 @@
-[![build](https://github.com/jhackshaw/ofnotes/workflows/ofnotes/badge.svg)](https://github.com/jhackshaw/ofnotes/actions)
-[![codecov](https://codecov.io/gh/jhackshaw/ofnotes/branch/master/graph/badge.svg)](https://codecov.io/gh/jhackshaw/ofnotes)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=jhackshaw/ofnotes)](https://dependabot.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://www.ofnote.site)
-![GitHub](https://img.shields.io/github/license/jhackshaw/ofnotes)
 
-### About
 
-Ofnotes is a note taking application that is completely offline with support for live editing markdown and material-design. All notes are stored locally per browser.
-
-![Screen Shot](https://ofnote.site/preview.png)
-
-### Features
-
-- **Markdown**: notes support [github flavored markdown](https://github.github.com/gfm/) and are rendered using material design
-- **Tags**: notes can be tagged to make categorizing and finding them quick and easy
-- **Indexeddb**: never run out of storage space for notes
-- **Dark mode**: essential
+This is fork of ofNotes(https://github.com/jhackshaw/ofnotes)
 
 #### Built with
 
@@ -55,5 +40,3 @@ GitHub Actions is used for CI/CD and the site is deployed to netlify. CI configu
   `npm run start`
 - Format source:  
   `npm run format`.
-
-Pull requests welcome.
